@@ -14,7 +14,7 @@ env:
   # login to docker hub with provided secrets
   REGISTRY: docker.io
   REGISTRY_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-  REGISTRY_PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}
+  REGISTRY_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
   IMAGE_NAME: ${{ vars.DOCKERHUB_TAG }}
   # For release-please, see available types at https://github.com/google-github-actions/release-please-action/tree/v4/?tab=readme-ov-file#release-types-supported
   PROJECT_TYPE: simple
